@@ -27,38 +27,52 @@ p{
 
 .card {
     width:65%;
-    height: 50%;
+    height: 60%;
     border: 2px solid hsl(244, 38%, 16%);
     border-radius: 2rem;
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* flex-direction: flex-start; */
+    /* flex-direction: row; */
+    /* justify-content: center;
+    align-items: center; */
 }
 
-.card1{  border: 2px solid white;
+.card1{  
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: flex-start;
+  padding: 2.5rem 4.5rem 2.5rem 2rem;
+
+
   /*  padding: 2rem; */
     width: 50%;
     height: 100%; 
 }
 h1 {
+  font-size: 1.5rem;
+  margin-bottom: .8rem;
+  line-height: 2rem;
   color: white;
+  letter-spacing: .1rem;
 }
 span{
   color:hsl(277, 64%, 61%);
 }
-.para{ border: 2px solid whitesmoke;
-  font: 1rem;
-  /* line-height: 1.4; */
+.para p { 
+  font-size: .8rem;
+  margin-bottom: 4rem;
+  line-height: 1.4rem;
   /* padding: 2rem auto 4rem auto; */
 }
 
 .footer{
-  border: 2px solid white;
+
   display: flex;
+  align-items: center;
   /* margin-top: 3rem; */
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .card2{
@@ -66,6 +80,9 @@ span{
    height: 100%;
    /* border-radius:  1rem 1rem 0; */
    position: relative;
+}
+.stats .meta{
+  margin-top: .6rem;
 }
 
 img{ 
@@ -91,3 +108,4 @@ img{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
