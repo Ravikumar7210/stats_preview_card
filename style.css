@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.mi{
+  display: none;
+}
 body {
   font-size: 15px;
   font-family: 'Inter', sans-serif;
@@ -29,7 +32,7 @@ p{
     width:65%;
     height: 60%;
     border: 2px solid hsl(244, 38%, 16%);
-    border-radius: 2rem;
+    border-radius: .4rem;
     position: relative;
     display: flex;
     /* flex-direction: flex-start; */
@@ -42,7 +45,7 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-direction: flex-start;
+  /* flex-direction: flex-end; */
   padding: 2.5rem 4.5rem 2.5rem 2rem;
 
 
@@ -88,7 +91,7 @@ span{
 img{ 
     width: 100%;
     height: 100%;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 .4rem .4rem 0;
     /* mix-blend-mode: multiply; */
 }  
  .pink{
@@ -99,7 +102,7 @@ img{
     top:0;
     left:0;
     opacity: .4;
-    border-radius:0 1rem 1rem 0 ;
+    border-radius:0 .4rem 0.4rem 0 ;
 } 
 .attribution {
   font-size: 11px;
@@ -109,3 +112,94 @@ img{
   color: hsl(228, 45%, 44%);
 }
 
+@media (max-width:375px){
+ 
+.mi{
+  display: initial;
+ 
+}
+.di{
+  display: none;
+}
+
+.card {
+  width:90%;
+  height: 80%;
+  border: 2px solid hsl(244, 38%, 16%);
+  border-radius: .4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  /* flex-direction: row; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.container {
+  background-color: hsl(233, 47%, 7%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.card1{  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: 0;
+  raw-gap: 0; */
+
+  /* flex-direction: flex-end; */
+  padding: 0;
+  /* padding: 2.5rem 4.5rem 2.5rem 2rem; */
+
+
+  /*  padding: 2rem; */
+    width: 100%;
+    height: 70%; 
+}
+
+.head{margin: 0;
+  border: 2px solid white;
+  width: 100%;
+
+}
+h1 {padding: 3px;
+
+  font-size: 0.9rem;
+  /* margin-bottom: .8rem; */
+  line-height: 0.9rem;
+  color: white;
+  /* letter-spacing: .1rem; */
+}
+.para p { border: 2px solid red;
+  font-size: .7rem;
+  margin-bottom: 0;
+  padding: 0.9rem;
+  line-height: 1.2rem;
+  /* padding: 2rem auto 4rem auto; */
+}
+
+.footer{border: 2px solid orange;
+padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0rem;
+  justify-content: center;
+}
+
+.stats .meta{
+
+  margin-top: .6rem;
+}
+
+.card2{
+  width: 100%;
+height: 30%;
+/* border-radius:  1rem 1rem 0; */
+position: relative;
+}
+
+}
